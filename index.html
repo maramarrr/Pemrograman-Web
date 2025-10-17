@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <style type="text/css">
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #660808 0%, #6a11cb 100%);
+      }
+      form {
+        border: 2px solid rgb(110, 11, 121);
+        padding: 20px;
+        background-color: #0d637e;
+        border-radius: 20px;
+      }
+      .tombol-login {
+        margin-top: 20px;
+        width: 100%;
+      }
+      img {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 100%;
+        background: #bd8282;
+        padding: 16px 0 12px 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #dadada;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      "
+    >
+      UNNES
+    </div>
+    <div id="container" class="border border-primary">
+      <form action="login.php" method="POST">
+        <img
+          src="https://unnes.ac.id/wp-content/uploads/2022/11/logo-unnes-horizontal-white-yellow.png"
+          alt="Logo"
+          style="display: block; margin: 0 auto 20px"
+        />
+        <p style="text-align: center; font-size: 36px">Login</p>
+        <label>Username</label>
+        <input
+          name="username"
+          type="text"
+          class="form-control form-control-lg"
+        />
+        <label>Password</label>
+        <input
+          name="password"
+          type="password"
+          class="form-control form-control-lg"
+        />
+        <input type="checkbox" name="remember" class="form-check-input" />
+        Remember Me
+        <button type="submit" class="btn btn-dark tombol-login">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-check-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+            />
+          </svg>
+          login
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
