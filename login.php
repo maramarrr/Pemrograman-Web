@@ -16,13 +16,14 @@ echo $_POST['password'];
 
 if(($_POST['username'] == $username_valid) && ($_POST['password'] == $password_valid)){
 
-    $_SESSION['login'] []= [
-        'username' => 'username',
-        'password' => 'password',
+        $_SESSION['login'][] = [
+        'username' => $_POST['username'],
+        'password' => $_POST['password'],
         'login_time' => date('Y-m-d H:i:s')
     ];
+
     //jika benar
-    echo "Selamat datang " . $username . ", anda sudah login sebanyak: " . count($_SESSION['login']) . " kali";
+    echo "Selamat datang " . $_POST['username'] . ", anda sudah login sebanyak: " . count($_SESSION['login']) . " kali";
     echo "<br>";
     echo "<a href='logout.php'>Logout</a>";
     echo '<pre>';
